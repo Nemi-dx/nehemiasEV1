@@ -1,0 +1,40 @@
+body {
+  background: #b0e9ff;
+  background: radial-gradient(circle, rgba(176, 233, 255, 1) 0%, rgba(212, 250, 227, 1) 50%, rgba(255, 252, 237, 1) 100%);
+  color: #263238;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 3rem 1.25rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.barra-navegacion {
+  align-items: center;
+  border-bottom: 1px solid #d7d8d0;
+  display: flex;
+  height: 76px;
+  justify-content: space-between;
+  padding: 0 clamp(1.25rem, 5vw, 5.5rem);
+}
+
+.marca { color: #19201d; font-weight: 700; text-decoration: none; }
+.marca__simbolo { color: #ff653d; font-size: 1.4rem; }
+nav { display: flex; gap: 2rem; }
+.nav-link { color: #737973; font-size: .85rem; text-decoration: none; }
+.nav-link:hover, .nav-link--activo { color: #19201d; }
+.nav-link--activo { border-bottom: 2px solid #ff653d; padding-bottom: .4rem; }
+.eyebrow { color: #ff653d; font-family: monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.landing-panel h1 { letter-spacing: -.05em; line-height: .95; }
+.landing-panel h1 em { color: #ff653d; font-style: normal; }
+.landing-imagen { position: relative; }
+.landing-imagen img { display: block; max-height: 480px; object-fit: cover; width: 100%; }
+.landing-imagen__texto { background: #d7f36b; bottom: 1rem; font-size: .8rem; left: -1rem; padding: .8rem 1rem; position: absolute; }
+.juego-card__imagen { height: 220px; object-fit: cover; }
+
+@media (max-width: 575px) {
+  body { padding: 0 0 2rem; }
+  nav { gap: 1rem; }
+  .landing-imagen__texto { left: .5rem; }
+}
+
